@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MH_EM
+namespace MH_EM.View
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,6 +22,11 @@ namespace MH_EM
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            myTextBlock.Text = myTextBlock.Text != "Hello C# World!" ? "Hello C# World!" : "Are you still there?";
+            myButton.Content = myButton.Content.ToString() != "Press me" ? "Press me" : "Press me harder";
         }
     }
 }
