@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<armor_parts>
+  
+  <amor_part>
+    <name>Lambent Casque</name>
+    <slot>head</slot>
+    <jewel_slots>0</jewel_slots>
+    <resistances>
+      <fire>1</fire>
+      <water>0</water>
+      <ice>-7</ice>
+      <thunder>2</thunder>
+      <dragon>-1</dragon>
+    </resistances>
+    <defence>100</defence>
+    <skills>
+      <skill>
+        <name>Handicraft</name>
+        <points>2</points>
+      </skill>
+      <skill>
+        <name>Fate</name>
+        <points>-3</points>
+      </skill>
+      <skill>
+        <name>Carving</name>
+        <points>4</points>
+      </skill>
+      <skill>
+        <name>Spirit</name>
+        <points>3</points>
+      </skill>
+      <skill>
+        <name>Status Res</name>
+        <points>2</points>
+      </skill>
+    </skills>
+    <materials>
+      <material>
+        <name>Hvy L.Narga Fang</name>
+        <amount>3</amount>
+      </material>
+      <material>
+        <name>L.Narga Dapples</name>
+        <amount>3</amount>
+      </material>
+      <material>
+        <name>Cloudy Moonshard</name>
+        <amount>1</amount>
+      </material>
+      <material>
+        <name>Ghostly Quartz</name>
+        <amount>2</amount>
+      </material>
+    </materials>
+    <armor_type>Blademaster</armor_type>
+  </amor_part>
+
+  <amor_part>
+    <name>Silhouette Casque</name>
+    <slot>head</slot>
+    <jewel_slots>0</jewel_slots>
+    <resistances>
+      <fire>2</fire>
+      <water>1</water>
+      <ice>-6</ice>
+      <thunder>3</thunder>
+      <dragon>0</dragon>
+    </resistances>
+    <defence>56</defence>
+    <skills>
+      <skill>
+        <name>Loading</name>
+        <points>3</points>
+      </skill>
+      <skill>
+        <name>Fate</name>
+        <points>-3</points>
+      </skill>
+      <skill>
+        <name>Carving</name>
+        <points>4</points>
+      </skill>
+      <skill>
+        <name>Spirit</name>
+        <points>1</points>
+      </skill>
+      <skill>
+        <name>Status Res</name>
+        <points>3</points>
+      </skill>
+    </skills>
+    <materials>
+      <material>
+        <name>Hvy L.Narga Fang</name>
+        <amount>3</amount>
+      </material>
+      <material>
+        <name>L.Narga Dapples</name>
+        <amount>3</amount>
+      </material>
+      <material>
+        <name>Cloudy Moonshard</name>
+        <amount>1</amount>
+      </material>
+      <material>
+        <name>Ghostly Quartz</name>
+        <amount>2</amount>
+      </material>
+    </materials>
+    <armor_type>Gunner</armor_type>
+  </amor_part>
+
+  <amor_part>
+    <name>Silver Solhelm</name>
+    <slot>head</slot>
+    <jewel_slots>1</jewel_slots>
+    <resistances>
+      <fire>2</fire>
+      <water>-7</water>
+      <ice>0</ice>
+      <thunder>-4</thunder>
+      <dragon>4</dragon>
+    </resistances>
+    <defence>100</defence>
+    <skills>
+      <skill>
+        <name>Tenderizer</name>
+        <points>2</points>
+      </skill>
+      <skill>
+        <name>Fire Atk</name>
+        <points>3</points>
+      </skill>
+      <skill>
+        <name>Sharpness</name>
+        <points>3</points>
+      </skill>
+      <skill>
+        <name>Rec Level</name>
+        <points>-3</points>
+      </skill>
+    </skills>
+    <materials>
+      <material>
+        <name>S.Rathalos Shard</name>
+        <amount>5</amount>
+      </material>
+      <material>
+        <name>Rathalos Mantle</name>
+        <amount>1</amount>
+      </material>
+      <material>
+        <name>Rath Gleem</name>
+        <amount>3</amount>
+      </material>
+      <material>
+        <name>Purecrystal</name>
+        <amount>1</amount>
+      </material>
+    </materials>
+    <armor_type>Blademaster</armor_type>
+  </amor_part>
+  
+</armor_parts>
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sets>
+  
+  <set>
+    <name>Set1</name>
+    <armor_part>Lambent Casque</armor_part>
+    <armor_part>Lambent Hauberk</armor_part>
+    <armor_part>Lambent Wristrays</armor_part>
+    <armor_part>Lambent Sash</armor_part>
+    <armor_part>Lambent Gaiters</armor_part>
+  </set>
+
+  <set>
+    <name>Set3</name>
+    <armor_part>Silver Solhelm</armor_part>
+    <armor_part>Lambent Hauberk</armor_part>
+    <armor_part>Silver Solbraces</armor_part>
+    <armor_part>Lambent Sash</armor_part>
+    <armor_part>Silver Solgreaves</armor_part>
+  </set>
+  
+</sets>
