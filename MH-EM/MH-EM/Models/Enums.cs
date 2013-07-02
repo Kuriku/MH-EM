@@ -7,7 +7,7 @@ namespace MH_EM.Models
 {
     public class Enums
     {
-        public enum Armortype
+        public enum ArmorType
         {
             Blademaster,
             Gunner
@@ -15,11 +15,11 @@ namespace MH_EM.Models
 
         public enum EquipSlot
         {
-            Head,
-            Chest,
-            Arms,
-            Waist,
-            Legs
+            head,
+            chest,
+            arms,
+            waist,
+            legs
         }
     }
 }

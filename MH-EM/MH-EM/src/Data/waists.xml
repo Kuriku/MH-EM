@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<armor_parts>
+﻿<armor_parts>
 
-  <amor_part>
+  <armor_part>
     <name>Lambent Sash</name>
     <slot>waist</slot>
     <jewel_slots>3</jewel_slots>
@@ -50,9 +49,9 @@
       </material>
     </materials>
     <armor_type>Blademaster</armor_type>
-  </amor_part>
+  </armor_part>
 
-  <amor_part>
+  <armor_part>
     <name>Silhouette Sash</name>
     <slot>waist</slot>
     <jewel_slots>3</jewel_slots>
@@ -101,9 +100,9 @@
       </material>
     </materials>
     <armor_type>Gunner</armor_type>
-  </amor_part>
+  </armor_part>
 
-  <amor_part>
+  <armor_part>
     <name>Silver Solcoil</name>
     <slot>waist</slot>
     <jewel_slots>2</jewel_slots>
@@ -152,7 +151,7 @@
       </material>
     </materials>
     <armor_type>Blademaster</armor_type>
-  </amor_part>
+  </armor_part>
 
 </armor_parts>
 

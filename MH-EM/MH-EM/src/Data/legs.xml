@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<armor_parts>
+﻿<armor_parts>
 
-  <amor_part>
+  <armor_part>
     <name>Lambent Gaiters</name>
     <slot>legs</slot>
     <jewel_slots>0</jewel_slots>
@@ -54,9 +53,9 @@
       </material>
     </materials>
     <armor_type>Blademaster</armor_type>
-  </amor_part>
+  </armor_part>
 
-  <amor_part>
+  <armor_part>
     <name>Silhouette Gaiters</name>
     <slot>legs</slot>
     <jewel_slots>0</jewel_slots>
@@ -109,9 +108,9 @@
       </material>
     </materials>
     <armor_type>Gunner</armor_type>
-  </amor_part>
+  </armor_part>
 
-  <amor_part>
+  <armor_part>
     <name>Silver Solgreaves</name>
     <slot>legs</slot>
     <jewel_slots>0</jewel_slots>
@@ -160,7 +159,7 @@
       </material>
     </materials>
     <armor_type>Blademaster</armor_type>
-  </amor_part>
+  </armor_part>
 
 </armor_parts>
 
