@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace MH_EM.Models
-{
-    public class ArmorSet
-    {
-        string title;
-        ArmorPart head;
-        ArmorPart chest;
-        ArmorPart arms;
-        ArmorPart waist;
-        ArmorPart legs;
+namespace MH_EM.Models{
+    public class ArmorSet{
+        public string title { get; set; }
+        public ArmorPart head { get; set; }
+        public ArmorPart chest { get; set; }
+        public ArmorPart arms { get; set; }
+        public ArmorPart waist { get; set; }
+        public ArmorPart legs { get; set; }
     }
 }
