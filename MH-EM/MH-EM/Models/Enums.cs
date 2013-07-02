@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MH_EM.Models
 {
-    class Enums
+    public class Enums
     {
         public enum Armortype
         {

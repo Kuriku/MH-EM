@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MH_EM.Models
 {
-    class ArmorSet
+    public class ArmorSet
     {
         string title;
         ArmorPart head;

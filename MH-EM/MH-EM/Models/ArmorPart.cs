@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MH_EM.Models
 {
-    class ArmorPart
+    public class ArmorPart
     {
         string name;                                                            //name of armor piece
         Enums.EquipSlot equip_slot;                                             //head,chest,arms,waist or legs
