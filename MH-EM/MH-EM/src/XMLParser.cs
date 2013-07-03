@@ -58,5 +58,13 @@ namespace MH_EM.src
             }
         }
 
+        public static void ParseSets(string file, List<ArmorSet> sets)
+        {
+        }
+
+        public static void ParseJewels(string file, List<Jewel> jewels)
+        {
+        }
+
     }
 }

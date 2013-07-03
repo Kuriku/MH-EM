@@ -7,6 +7,7 @@ namespace MH_EM.Models
 {
     public class ArmorPart
     {
+
         public string name;                                                            //name of armor piece
         public Enums.EquipSlot equip_slot;                                             //head,chest,arms,waist or legs
         public int jewel_slots;                                                        //0-3 jewel slots
@@ -47,7 +48,5 @@ namespace MH_EM.Models
             return output;
 
         }
-
-
     }
 }

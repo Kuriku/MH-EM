@@ -66,6 +66,8 @@
     <Compile Include="Models\ArmorPart.cs" />
     <Compile Include="Models\ArmorSet.cs" />
     <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Jewel.cs" />
+    <Compile Include="src\XMLParser.cs" />
     <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -117,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="src\Data\sets.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="src\Data\jewels.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
