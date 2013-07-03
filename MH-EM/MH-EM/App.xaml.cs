@@ -50,7 +50,6 @@ namespace MH_EM
             XMLParser.ParseArmor("../../src/Data/waists.xml", waists);
             XMLParser.ParseArmor("../../src/Data/legs.xml", legs);
             
-
             MainWindow main = new MainWindow();
 
             //// Step 4 - Make sure that the splash screen lasts at least two seconds

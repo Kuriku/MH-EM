@@ -4,8 +4,36 @@
         Title="Monster Hunter Equipment Manager" 
         WindowStartupLocation="CenterScreen"
         Height="600" Width="800">
-    <StackPanel>
-        <TextBlock x:Name="myTextBlock" Text="Hello C# World!"/>
-        <Button x:Name="myButton" Content="Press me"  Click="Button_Click" HorizontalAlignment="Left"/>
-    </StackPanel> 
+    <Window.Resources>
+        <!-- Template fuer die Darstellung von ArmorParts im DropDown-Menue -->
+        <DataTemplate x:Key="armorPartItemTemplate">
+            <TextBlock Text="{Binding Name}"/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <!-- List of sets -->
+            <ColumnDefinition Width="150px"/>
+            <!-- Set Details -->
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        
+        <!-- DropDown Menue der Head-ArmorParts -->
+        <StackPanel Grid.Column="0">
+            <Label Content="Heads" FontSize="15" FontWeight="SemiBold"/>
+            <ComboBox ItemsSource="{Binding Heads}"
+                      ItemTemplate="{StaticResource armorPartItemTemplate}"
+                      SelectedItem="{Binding SelectedHead, Mode=TwoWay}" />
+        </StackPanel>
+        
+        <!-- Detailansicht des ausgewaehlten Head-ArmorParts -->
+        <StackPanel Grid.Column="1" Margin="50,0,0,0">
+            <Label Content="Details" FontSize="15" FontWeight="SemiBold"/>
+            <TextBlock Text="{Binding SelectedHead}"/>
+        </StackPanel>
+        
+    </Grid>
 </Window>

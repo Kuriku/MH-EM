@@ -11,22 +11,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MH_EM.ViewModels;
 
-namespace MH_EM.View
-{
+namespace MH_EM.View{
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+    public partial class MainWindow : Window{
+        public EquipmentManagerViewModel EquipmentManagerViewModel { get; private set; }
 
-        private void Button_Click(object sender, RoutedEventArgs e) {
-            myTextBlock.Text = myTextBlock.Text != "Hello C# World!" ? "Hello C# World!" : "Are you still there?";
-            myButton.Content = myButton.Content.ToString() != "Press me" ? "Press me" : "Press me harder";
+        public MainWindow(){
+            EquipmentManagerViewModel = new EquipmentManagerViewModel();
+            this.DataContext = EquipmentManagerViewModel;
+            InitializeComponent();
         }
     }
 }
