@@ -8,14 +8,14 @@ namespace MH_EM.Models
     public class Skill
     {
 
-        public string name { get; set; }
-        public Dictionary<string, int> effects { get; set; }
+        public string Name { get; set; }
+        public Dictionary<string, int> Effects { get; set; }
 
         public Skill()
         {
 
-            this.name = "";
-            this.effects = new Dictionary<string, int>();
+            this.Name = "";
+            this.Effects = new Dictionary<string, int>();
         }
 
 

@@ -10,23 +10,23 @@ namespace MH_EM.Models
     public class ArmorSet
     {
 
-        public string title { get; set; }
-        public ArmorPart head { get; set; }
-        public ArmorPart chest { get; set; }
-        public ArmorPart arms { get; set; }
-        public ArmorPart waist { get; set; }
-        public ArmorPart legs { get; set; }
+        public string Title { get; set; }
+        public ArmorPart Head { get; set; }
+        public ArmorPart Chest { get; set; }
+        public ArmorPart Arms { get; set; }
+        public ArmorPart Waist { get; set; }
+        public ArmorPart Legs { get; set; }
 
 
         public ArmorSet()
         {
 
-            this.title = "";
-            this.head = new ArmorPart();
-            this.chest = new ArmorPart();
-            this.arms = new ArmorPart();
-            this.waist = new ArmorPart();
-            this.legs = new ArmorPart();
+            this.Title = "";
+            this.Head = new ArmorPart();
+            this.Chest = new ArmorPart();
+            this.Arms = new ArmorPart();
+            this.Waist = new ArmorPart();
+            this.Legs = new ArmorPart();
 
         }
 

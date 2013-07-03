@@ -1,34 +1,4 @@
-﻿ public ArmorParts()
-        {
-
-            this.name = "";
-            this.equip_slot = Enums.EquipSlot.head;
-            this.jewel_slots = 0;
-            this.resistances = new Dictionary<string,int>();
-            this.defence = 0;
-            this.skills = new Dictionary
-    <string, int>();
-            this.materials = new Dictionary
-        <string, int>();
-            this.armor_type = Enums.ArmorType.Blademaster;
-
-        }        public ArmorParts()
-        {
-
-            this.name = "";
-            this.equip_slot = Enums.EquipSlot.head;
-            this.jewel_slots = 0;
-            this.resistances = new Dictionary
-            <string,int>();
-            this.defence = 0;
-            this.skills = new Dictionary
-                <string, int>();
-            this.materials = new Dictionary
-                    <string, int>();
-            this.armor_type = Enums.ArmorType.Blademaster;
-
-        }
-                        <Window x:Class="MH_EM.View.MainWindow"
+﻿ <Window x:Class="MH_EM.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Monster Hunter Equipment Manager" 
