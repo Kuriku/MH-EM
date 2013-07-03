@@ -1,0 +1,40 @@
+﻿<skills>
+  <skill>
+    <name>Attack</name>
+    <effects>
+      <effect>
+        <name>Attack Up (S)</name>
+        <threshold>10</threshold>
+      </effect>
+      <effect>
+        <name>Attack Up (M)</name>
+        <threshold>15</threshold>
+      </effect>
+      <effect>
+        <name>Attack Up (L)</name>
+        <threshold>20</threshold>
+      </effect>
+      <effect>
+        <name>Attack Down (S)</name>
+        <threshold>-10</threshold>
+      </effect>
+      <effect>
+        <name>Attack Down (M)</name>
+        <threshold>-15</threshold>
+      </effect>
+      <effect>
+        <name>Attack Down (L)</name>
+        <threshold>-20</threshold>
+      </effect>
+    </effects>
+  </skill>
+  <skill>
+    <name>Handicraft</name>
+    <effects>
+      <effect>
+        <name>Sharpness +1</name>
+        <threshold>10</threshold>
+      </effect>
+    </effects>
+  </skill>
+</skills>

@@ -5,17 +5,17 @@ using System.Text;
 
 namespace MH_EM.Models
 {
-    public class Jewel
+    public class Skill
     {
 
         public string name { get; set; }
-        public Dictionary<string, int> skills { get; set; }
+        public Dictionary<string, int> effects { get; set; }
 
-        public Jewel()
+        public Skill()
         {
 
             this.name = "";
-            this.skills = new Dictionary<string, int>();
+            this.effects = new Dictionary<string, int>();
         }
 
 

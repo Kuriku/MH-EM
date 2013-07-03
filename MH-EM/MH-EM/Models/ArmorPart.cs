@@ -8,14 +8,29 @@ namespace MH_EM.Models
     public class ArmorPart
     {
 
-        public string name;                                                            //name of armor piece
-        public Enums.EquipSlot equip_slot;                                             //head,chest,arms,waist or legs
-        public int jewel_slots;                                                        //0-3 jewel slots
-        public Dictionary<string, int> resistances = new Dictionary<string,int>();     //fire, water, ice, thunder, dragon resistance
-        public int defence;                                                            //defence value
-        public Dictionary<string, int> skills = new Dictionary<string, int>();         //1-5 skills granted
-        public Dictionary<string, int> materials = new Dictionary<string, int>();      //1-4 materials required
-        public Enums.ArmorType armor_type;                                             //blademaster or gunner
+        public string name { get; set; }                                                            //name of armor piece
+        public Enums.EquipSlot equip_slot { get; set; }                                             //head,chest,arms,waist or legs
+        public int jewel_slots { get; set; }                                                        //0-3 jewel slots
+        public Dictionary<string, int> resistances{ get; set; }                                     //fire, water, ice, thunder, dragon resistance
+        public int defence { get; set; }                                                            //defence value
+        public Dictionary<string, int> skills{ get; set; }                                          //1-5 skills granted
+        public Dictionary<string, int> materials { get; set; }                                      //1-4 materials required
+        public Enums.ArmorType armor_type { get; set; }                                             //blademaster or gunner
+
+
+        public ArmorPart()
+        {
+
+            this.name = "";
+            this.equip_slot = Enums.EquipSlot.head;
+            this.jewel_slots = 0;
+            this.resistances = new Dictionary<string,int>();
+            this.defence = 0;
+            this.skills = new Dictionary<string, int>();
+            this.materials = new Dictionary<string, int>();
+            this.armor_type = Enums.ArmorType.Blademaster;
+
+        }
 
 
         public override string ToString()                                               //override default toString() for nice console output, because why not!

@@ -66,5 +66,9 @@ namespace MH_EM.src
         {
         }
 
+        public static void ParseSkills(string file, List<Jewel> jewels)
+        {
+        }
+
     }
 }
