@@ -1,0 +1,29 @@
+﻿<jewels>
+  <jewel>
+    <name>Charger Jewel 1</name>
+    <skills>
+      <skill>
+        <name>FastCharge</name>
+        <points>1</points>
+      </skill>
+      <skill>
+        <name>Constitutn</name>
+        <points>-1</points>
+      </skill>
+    </skills>
+  </jewel>
+
+  <jewel>
+    <name>Charger Jewel 3</name>
+    <skills>
+      <skill>
+        <name>FastCharge</name>
+        <points>4</points>
+      </skill>
+      <skill>
+        <name>Constitutn</name>
+        <points>-2</points>
+      </skill>
+    </skills>
+  </jewel>
+</jewels>
