@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
-using System.Xml.XPath;
 using MH_EM.Models;
 
 namespace MH_EM.src
@@ -16,11 +15,8 @@ namespace MH_EM.src
 
             XDocument root = XDocument.Load(file);              //load xml file
 
-            var armorParts = root.XPathSelectElements("//armor_part");
-
-            //// ohne XPath
-            //var armorParts = root.Element("armor_parts").Elements("armor_part");       //returns enumerable collection of armor_part entries in xml file
-            
+            var armorParts = root.Elements().Elements();
+                     
             foreach (var part in armorParts)                    // enumerate through all armor_part entries
             {
                 ArmorPart armorPart = new ArmorPart();                                                                                  //create new ArmorPart object
@@ -57,8 +53,30 @@ namespace MH_EM.src
             }
         }
 
-        public static void ParseSets(string file, List<ArmorSet> sets)
+        public static void ParseSets(string file, List<ArmorSet> setlist)       //parses saved sets from xml file
         {
+
+            XDocument root = XDocument.Load(file);              //load xml file
+
+            var sets = root.Elements().Elements();
+
+            foreach (var set in sets)                    // enumerate through all set entries
+            {
+
+                ArmorSet armorset = new ArmorSet();
+
+                armorset.Title = set.Element("name").Value;                                     //extract title from xml file
+                armorset.Head = LookupArmorPiece("head", set.Element("head").Value);            //lookup armor pieces by name from already parsed armor file
+                armorset.Chest = LookupArmorPiece("chest", set.Element("chest").Value);
+                armorset.Arms = LookupArmorPiece("arms", set.Element("arms").Value);
+                armorset.Head = LookupArmorPiece("waist", set.Element("waist").Value);
+                armorset.Head = LookupArmorPiece("legs", set.Element("legs").Value);
+
+                setlist.Add(armorset);
+
+            }
+
+
         }
 
         public static void ParseJewels(string file, List<Jewel> jewels)
@@ -67,6 +85,44 @@ namespace MH_EM.src
 
         public static void ParseSkills(string file, List<Jewel> jewels)
         {
+        }
+
+
+        public static ArmorPart LookupArmorPiece(string slot, string name)      //returns ArmorPiece object of an armorpiece by slot and name, null if not in list
+        {
+
+            List<ArmorPart> partlist;
+            ArmorPart piece = null;
+
+            switch (slot)
+            {
+                case "head":
+                    partlist = App.heads;
+                    break;
+                case "chest":
+                    partlist = App.chests;
+                    break;
+                case "arms":
+                    partlist = App.arms;
+                    break;
+                case "waist":
+                    partlist = App.waists;
+                    break;
+                case "legs":
+                    partlist = App.legs;
+                    break;
+                default:
+                    partlist = null;
+                    break;
+            }
+
+            foreach (ArmorPart item in partlist)
+            {
+                if (item.Name == name)
+                    piece = item;
+            }
+
+            return piece;
         }
 
     }
